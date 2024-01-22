@@ -1,17 +1,58 @@
+let playerScore = 0;
+let computerScore = 0;
+
 game();
 
 function game() {
     let playerChoice;
     let computerChoice;
 
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < 5; i++) {
         playerChoice = prompt("Enter your choice: ");
+        playerChoice.toLowerCase();
         computerChoice = getComputerChoice();
 
-        function playRound(playerChoice, computerChoice) {
-
-        }
+        playRound(playerChoice, computerChoice);
     }
+
+    console.log(playerScore);
+    console.log(computerScore);
+}
+
+function playRound(playerChoice, computerChoice) {
+    if (playerChoice == "rock" && computerChoice == "paper") {
+        console.log("Computer Wins!");
+        computerScore += 1;
+    }
+    else if (playerChoice == "paper" && computerChoice == "rock") {
+        console.log("Player Wins!");
+        playerScore += 1;
+    }
+    else if (playerChoice == "rock" && computerChoice == "scissor") {
+        console.log("Player Wins!");
+        playerScore += 1;
+    }
+    else if (playerChoice == "scissor" && computerChoice == "rock") {
+        console.log("Computer Wins!");
+        computerScore += 1;
+    }
+    else if (playerChoice == "paper" && computerChoice == "scissor") {
+        console.log("Computer Wins!");
+        computerScore += 1;
+    }
+    else if (playerChoice == "scissor" && computerChoice == "paper") {
+        console.log("Player Wins!");
+        playerScore += 1;
+    }
+    else if (playerChoice == computerChoice) {
+        console.log("Its a Tie!");
+        playerChoice = prompt("Enter your choice: ");
+        playerChoice.toLowerCase();
+
+        computerChoice = getComputerChoice();
+        playRound(playerChoice, computerChoice);
+    }
+    
 }
 
 function getComputerChoice() {
