@@ -8,11 +8,9 @@ function game() {
         playerChoice = prompt("Enter your choice: ");
         computerChoice = getComputerChoice();
 
-        // function playRound(playerChoice, computerChoice) {
+        function playRound(playerChoice, computerChoice) {
 
-        // }
-        console.log(playerChoice);
-        console.log(computerChoice)
+        }
     }
 }
 
