@@ -5,19 +5,20 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    background-color: rgb(53, 53, 53);
 }
 
 #header {
-    border: solid red;
+    /* border: solid red; */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(56, 56, 63);
-
+    background-color: rgb(46, 44, 44);
+    height:100px;
 }
 
 #header-text {
-    border: solid gold;
+    /* border: solid gold; */
     color: blanchedalmond;
     font-family: 'DM Sans', sans-serif;
     font-size: xxx-large;
@@ -25,16 +26,28 @@ body {
 }
 
 #round-winner {
-    border: solid greenyellow;
+    /* border: solid greenyellow; */
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    font-family: 'DM Sans', sans-serif;
+    font-weight: bold;
+    color: blanchedalmond;
+    font-size: larger;
 }
 
 #versus {
     border: solid rgb(97, 49, 6);
     display: flex;
     justify-content: center;
+
+    font-family: 'DM Sans', sans-serif;
+    color: blanchedalmond;
+}
+
+#versus img {
+    width: 100px;
 }
 
 #player-choice {
