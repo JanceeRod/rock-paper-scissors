@@ -68,11 +68,16 @@ body {
 }
 
 #options img {
-    width: 150px;
+    width: 120px;
     /* border: solid red; */
 }
 
 #options button {
     border-radius: 20px;
     background-color: rgb(65, 57, 50);
+    padding: 15px;
+}
+
+#options button:hover {
+    background-color: rgb(51, 44, 39);
 }
