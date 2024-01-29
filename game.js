@@ -7,6 +7,9 @@ playerScoreText.textContent = "Player: " + playerScore;
 let computerScoreText = document.getElementById('computer-score');
 computerScoreText.textContent = "Computer: " + computerScore;
 
+let roundWinner = document.getElementById('who-won');
+let whyWinner = document.getElementById('why-winner');
+
 const rockButton = document.getElementById('rock-button');
 const paperButton = document.getElementById('paper-button');
 const scissorsButton = document.getElementById('scissors-button');
@@ -50,33 +53,47 @@ function playRound(playerChoice, computerChoice) {
         console.log("Computer Wins!");
         computerScore += 1;
         computerScoreText.textContent = "Computer: " + computerScore;
+        roundWinner.textContent = "Computer won this round";
+        whyWinner.textContent = "Paper defeats Rock";
     }
     else if (playerChoice == "paper" && computerChoice == "rock") {
         console.log("Player Wins!");
         playerScore += 1;
         playerScoreText.textContent = "Player: " + playerScore;
+        roundWinner.textContent = "Player won this round";
+        whyWinner.textContent = "Paper defeats Rock";
     }
     else if (playerChoice == "rock" && computerChoice == "scissor") {
         console.log("Player Wins!");
         playerScore += 1;
         playerScoreText.textContent = "Player: " + playerScore;
+        roundWinner.textContent = "Player won this round";
+        whyWinner.textContent = "Rock defeats Scissor";
     }
     else if (playerChoice == "scissor" && computerChoice == "rock") {
         console.log("Computer Wins!");
         computerScore += 1;
         computerScoreText.textContent = "Computer: " + computerScore;
+        roundWinner.textContent = "Computer won this round";
+        whyWinner.textContent = "Rock defeats Scissor";
     }
     else if (playerChoice == "paper" && computerChoice == "scissor") {
         console.log("Computer Wins!");
         computerScore += 1;
         computerScoreText.textContent = "Computer: " + computerScore;
+        roundWinner.textContent = "Computer won this round";
+        whyWinner.textContent = "Scissor defeats Paper";
     }
     else if (playerChoice == "scissor" && computerChoice == "paper") {
         console.log("Player Wins!");
         playerScore += 1;
         playerScoreText.textContent = "Player: " + playerScore;
+        roundWinner.textContent = "Player won this round";
+        whyWinner.textContent = "Scissor defeats Paper";
     }
     else if (playerChoice == computerChoice) {
+        roundWinner.textContent = "It's a tie!";
+        whyWinner.textContent = "No one won in this round";
         console.log("Its a Tie!");
         playerChoice = prompt("Enter your choice: ");
         playerChoice.toLowerCase();
