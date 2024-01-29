@@ -51,15 +51,16 @@ body {
 }
 
 #player-choice {
-    border: solid salmon;
+    /* border: solid salmon; */
 }
 
 #computer-choice {
-    border: solid cyan;
+    /* border: solid cyan; */
 }
 
 #options {
-    border: solid red;
+    /* border: solid red; */
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -67,6 +68,11 @@ body {
 }
 
 #options img {
-    width: 200px;
-    border: solid red;
+    width: 150px;
+    /* border: solid red; */
+}
+
+#options button {
+    border-radius: 20px;
+    background-color: rgb(65, 57, 50);
 }
