@@ -73,11 +73,26 @@ body {
 }
 
 #options button {
-    border-radius: 20px;
-    background-color: rgb(65, 57, 50);
-    padding: 15px;
+background: rgb(65, 57, 50); border-radius: 2em; border: 3px solid rgb(241, 187, 10); color: rgb(55, 0, 0); cursor: pointer; font-weight: bold; outline: none; padding: 1.25em 2em; position: relative; text-transform: uppercase; transform-style: preserve-3d; transition: all 150ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;
+}
+
+#options button::before {
+background: rgb(41, 38, 38); border-radius: inherit; box-shadow: rgb(41, 38, 38) 0px 0px 0px 2px, rgb(41, 38, 38) 0px 0.6em 0px 0px; content: ""; height: 100%; left: 0px; position: absolute; top: 0px; transform: translate3d(0px, 0.75em, -1em); transition: all 150ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s; width: 100%;
 }
 
 #options button:hover {
-    background-color: rgb(51, 44, 39);
+color: rgb(55, 0, 0); transform: translate(0px, 0.25em); background: rgb(41, 38, 38);
 }
+
+#options button:hover::before {
+box-shadow: rgb(41, 38, 38) 0px 0px 0px 2px, rgb(41, 38, 38) 0px 0.45em 0px 0px; transform: translate3d(0px, 0.5em, -1em);
+}
+
+#options button:active {
+background: rgb(58, 54, 54); color: rgb(41, 38, 38); transform: translate(0px, 0.75em);
+}
+
+#options button:active::before {
+box-shadow: rgb(41, 38, 38) 0px 0px 0px 3px, rgb(41, 38, 38) 0px 0px; transform: translate3d(0px, 0px, -1em);
+}
+
