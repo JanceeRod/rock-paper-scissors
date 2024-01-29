@@ -22,10 +22,14 @@ function game() {
 
     paperButton.addEventListener('click', () => {
         playerImage.src = "https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/svg/270b.svg";
+        playerChoice = 'paper';
+        computerChoice = getComputerChoice();
     });
 
     scissorsButton.addEventListener('click', () => {
         playerImage.src = "https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/svg/270c.svg";
+        playerChoice = 'scissor';
+        computerChoice = getComputerChoice();
     });
 
     console.log(playerScore);
@@ -74,12 +78,15 @@ function getComputerChoice() {
     switch (number) {
         case 0: 
             choice = "rock";
+            computerImage.src = "https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/svg/270a.svg";
             break;
         case 1:
             choice = "paper";
+            computerImage.src = "https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/svg/270b.svg";
             break;
         case 2:
-            choice = "scissor"
+            choice = "scissor";
+            computerImage.src = "https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/svg/270c.svg";
             break;
     }
     return choice;
