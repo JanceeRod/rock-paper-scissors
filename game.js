@@ -1,13 +1,32 @@
 let playerScore = 0;
 let computerScore = 0;
 
+const rockButton = document.getElementById('rock-button');
+const paperButton = document.getElementById('paper-button');
+const scissorsButton = document.getElementById('scissors-button');
+
+var playerImage = document.getElementById('player-img');
+var computerImage = document.getElementById('computer-img');
+
 game();
 
 function game() {
     let playerChoice;
     let computerChoice;
 
-    
+    rockButton.addEventListener('click', () => {
+        playerImage.src = "https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/svg/270a.svg";
+        playerChoice = 'rock';
+        computerChoice = getComputerChoice();
+    });
+
+    paperButton.addEventListener('click', () => {
+        playerImage.src = "https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/svg/270b.svg";
+    });
+
+    scissorsButton.addEventListener('click', () => {
+        playerImage.src = "https://images.emojiterra.com/google/noto-emoji/unicode-15.1/color/svg/270c.svg";
+    });
 
     console.log(playerScore);
     console.log(computerScore);
