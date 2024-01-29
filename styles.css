@@ -23,3 +23,37 @@ body {
     font-size: xxx-large;
     font-weight: bold;
 }
+
+#round-winner {
+    border: solid greenyellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#versus {
+    border: solid rgb(97, 49, 6);
+    display: flex;
+    justify-content: center;
+}
+
+#player-choice {
+    border: solid salmon;
+}
+
+#computer-choice {
+    border: solid cyan;
+}
+
+#options {
+    border: solid red;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+
+#options img {
+    width: 200px;
+    border: solid red;
+}
