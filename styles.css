@@ -41,10 +41,6 @@ body {
     margin: 5px;
 }
 
-#round-winner #who-won {
-    /* border: solid red; */
-}
-
 #round-winner #why-winner {
     /* border: solid red; */
     font-size: x-large;
