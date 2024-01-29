@@ -7,13 +7,7 @@ function game() {
     let playerChoice;
     let computerChoice;
 
-    for (let i = 0; i < 5; i++) {
-        playerChoice = prompt("Enter your choice: ");
-        playerChoice.toLowerCase();
-        computerChoice = getComputerChoice();
-
-        playRound(playerChoice, computerChoice);
-    }
+    
 
     console.log(playerScore);
     console.log(computerScore);
