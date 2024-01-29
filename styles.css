@@ -27,40 +27,59 @@ body {
 
 #round-winner {
     /* border: solid greenyellow; */
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-top: 30px;
+}
 
+#round-winner p {
     font-family: 'DM Sans', sans-serif;
     font-weight: bold;
     color: blanchedalmond;
-    font-size: larger;
+    font-size: xx-large;
+    margin: 5px;
+}
+
+#round-winner #who-won {
+    /* border: solid red; */
+}
+
+#round-winner #why-winner {
+    /* border: solid red; */
+    font-size: x-large;
 }
 
 #versus {
-    border: solid rgb(97, 49, 6);
+    /* border: solid rgb(97, 49, 6); */
     display: flex;
     justify-content: center;
+    gap: 30px;
+    margin-top: 35px;
 
     font-family: 'DM Sans', sans-serif;
     color: blanchedalmond;
 }
 
 #versus img {
-    width: 100px;
+    width: 150px;
 }
 
-#player-choice {
+#versus p {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#player-choice, #computer-choice {
     /* border: solid salmon; */
-}
-
-#computer-choice {
-    /* border: solid cyan; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #options {
     /* border: solid red; */
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 40px;
