@@ -99,8 +99,6 @@ function playRound(playerChoice, computerChoice) {
         roundWinner.textContent = "It's a tie!";
         whyWinner.textContent = "No one won in this round";
         console.log("Its a Tie!");
-        playerChoice = prompt("Enter your choice: ");
-        playerChoice.toLowerCase();
 
         computerChoice = getComputerChoice();
         playRound(playerChoice, computerChoice);
